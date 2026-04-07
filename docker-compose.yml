@@ -12,7 +12,7 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=1234
-      - POSTGRES_DB=demo01
+      - POSTGRES_DB=bus
     
     volumes:
       - pg-data:/var/lib/postgresql/data
