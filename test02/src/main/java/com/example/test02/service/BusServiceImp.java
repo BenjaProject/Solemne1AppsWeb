@@ -12,7 +12,7 @@ import com.example.test02.interfaces.IBusService;
 public class BusServiceImp implements IBusService {
 	
 	private RestTemplate restTemplate = new RestTemplate();
-	private final String url = "http://localhost:6789/api/v1/entities/buses";
+	private final String url = "http://backendbc:6789/api/v1/entities/buses";
 	@Override
 	public List<BusEntity> findAll() {
 		BusEntity[] list = restTemplate.getForObject(url, BusEntity[].class);
